@@ -1,11 +1,13 @@
 import { Fragment, useState } from 'react'
 import { Outlet, Route, Routes } from 'react-router-dom';
-import HomePage from './HomePage'
-import ServicesPage from './ServicesPage'
-import OurTeamPage from './OurTeamPage'
-import CareersPage from './CareersPage'
-import ContactUsPage from './ContactUsPage'
+import Home from './Home'
+import Services from './Services'
+import OurTeam from './OurTeam'
+import Careers from './Careers'
+import ContactUs from './ContactUs'
+import AboutUs from './AboutUs'
 import Footer from './Footer'
+import Nav from './Nav';
 import { useState } from 'react'
 import './App.css'
 
@@ -30,12 +32,11 @@ function App() {
     <>
        <Routes>
         <Route path={"/"} element={<NavLayout/>}>
-          <Route path={"/"} element={<Home/>}/>
-          <Route path={"/ContactUs"} element={<ContactUsPage/>}/>
-          <Route path={"/Home"} element={<HomePage/>}/>
-          <Route path={"/Services"} element={<ServicesPage/>}/>
-          <Route path={"/OurTeam"} element={<OurTeamPage/>}/>
-          <Route path={"/Careers"} element={<CareersPage/>}/>
+        <Route path={"/"} element={<Home/>}/>
+          <Route path={"/ContactUs"} element={<ContactUs/>}/>
+          <Route path={"/Services"} element={<Services/>}/>
+          <Route path={"/OurTeam"} element={<OurTeam/>}/>
+          <Route path={"/Careers"} element={<Careers/>}/>
         </Route>
       </Routes>
      
