@@ -34,6 +34,7 @@ function App() {
         <Route path={"/"} element={<NavLayout/>}>
         <Route path={"/"} element={<Home/>}/>
           <Route path={"/ContactUs"} element={<ContactUs/>}/>
+          <Route path={"/AboutUs"} element={<AboutUs/>}/>
           <Route path={"/Services"} element={<Services/>}/>
           <Route path={"/OurTeam"} element={<OurTeam/>}/>
           <Route path={"/Careers"} element={<Careers/>}/>
